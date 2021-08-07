@@ -1,0 +1,78 @@
+.er{
+    
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 50px;
+    background-color: $pink;
+   // width: 100%;
+  //  height: 100%;
+    
+  
+    #{&}__container{
+        border: solid 1px;
+        align-items: center;
+        justify-content: center;
+        height: 410px;
+        width: 100%;
+        position: relative;
+        &::before{
+            content: "";
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            position: absolute;
+            background-image: url(/cudmc/002.jpg);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            margin-top: 1px;
+           
+        }
+       }
+    #{&}__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #{&}__img{
+        flex: 8;
+        border: solid 1px;
+        align-items: center;  
+        background-image: url(/cudmc/001.jpg);
+        background-size: cover;
+        height: 500px;
+        width: 70%;
+
+    }
+    #{&}__text{
+       //@debug border: solid 5px;
+        flex: 4;
+        padding: 0px 0px;
+        position: relative;
+        left: 20px;
+        text-align: justify;
+        // right: 20px;
+        p, h1{
+            color: $white;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            height: 140%;
+            width: 100%;
+            background-size: cover;
+            background-image: url(/cudmc/logo_trans.png);
+            opacity: 0.25;
+            margin-left: -5px;
+            margin-top: -70px;
+        }
+        
+    }
+
+}

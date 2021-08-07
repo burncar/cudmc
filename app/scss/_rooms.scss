@@ -1,0 +1,46 @@
+.room{
+
+    &_modal{
+             
+        h3{
+            margin-top: 2%;
+        }
+    
+    &.openModal
+
+    {
+        position: fixed;
+        width: calc(100% - 3rem);
+        top: 28%;
+        left: 2.5%;
+        transform: translateX(-50%, -50%);
+        background: $white;
+        padding: 1.625rem;
+        border-radius: 5px;
+        border: solid 1px;
+
+        #doctor_name{
+           padding-top: 0px;
+           background-color: $veryLightGray;
+        }        
+       
+    }
+
+    table, th, td{
+        
+        width: 100%;
+       // border: solid 1px;
+        #modify{
+            width: 200px;
+        }
+        img{
+            width: 142px;
+            height: 142px;
+            
+        }
+    }
+    
+    }
+
+    
+}

@@ -1,0 +1,138 @@
+.hero {
+  background-color: $veryLightGray;
+
+  .container {
+    @include breakpoint-up(large){    
+      display: flex;
+      align-items: center;
+    }
+  }
+ 
+  &__image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+    .slides img{
+      background-position: center bottom;
+      content: "";
+      background-size: cover;
+      background-repeat: no-repeat;
+      position:absolute;
+      width:  130%;
+      height: 100%;
+      background-size: 10%;
+      background-position: center 150%;
+     // left: 22%;
+    }
+
+      @include breakpoint-up(large){
+        margin: auto;
+        position: relative;
+        flex: 5;
+        order: 2;
+        height: 41rem;
+        background-image: none;
+      
+      .slides img{
+        background-position: center bottom;
+        content: "";
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:absolute;
+        width:  130%;
+        height: 100%;
+        background-size: 10%;
+        background-position: center 150%;
+       // left: 22%;
+      }
+
+    }
+  
+
+
+    @include breakpoint-up(medium){
+      .slides img{
+        background-position: center bottom;
+        content: "";
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:absolute;
+        width:  130%;
+        height: 100%;
+        background-size: 10%;
+        background-position: center;
+       // left: 22%;
+      }
+    }
+      
+
+     
+
+}//IMAGE
+
+  
+
+
+  &__text {
+   // background-color: black;
+    text-align: center;
+    padding-bottom: 8.375rem;
+  
+    &::before{
+      background-position: center 32%;
+      content: "";
+      position: absolute;
+      height: 50%;
+      background-image: url(/cudmc/logo_trans.png);
+      background-repeat: no-repeat;
+      margin-left: -127px;
+      width: 78%;
+      background-size: cover;
+      opacity: 0.25;
+      margin-top: -40px;
+    }
+
+   
+
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 1;
+      text-align: left;
+      background-image: none;
+  
+      h1{
+        position: relative;
+      }
+      p{
+        position: relative;
+      }
+    }
+
+    &::before{
+      @include breakpoint-up(large){
+    background-position: center 32%;
+    content: "";
+    position: absolute;
+    height: 50%;
+    background-image: url(/cudmc/logo_trans.png);
+    background-repeat: no-repeat;
+    margin-left: -130px;
+    width: 34%;
+    background-size: cover;
+    opacity: 0.25; 
+      }
+    }
+    
+
+
+
+  }
+
+
+
+
+
+
+}
