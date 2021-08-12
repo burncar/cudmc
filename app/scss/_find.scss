@@ -61,26 +61,25 @@
         text-align: center;
       
         @include breakpoint-up(large){
-            position: relative; 
+            position: relative;
             height: 100%;
             width: 100%;
             display: flex;
-            justify-content: center;  
+            justify-content: center;
             margin-top: 20px;
         &::before{
             content: "";
             background-image: url(/cudmc/logo_trans.png);
-            top: 0px;
+            top: -140px;
             right: 0px;
             bottom: 0px;
             left: 0px;
             position: absolute;
             background-repeat: repeat;
-           // background-size: cover;
-            height: 48%;
+            height: 100%;
             width: 100%;
+            background-size: 15%;
             opacity: 0.15;
-           // margin: auto;  
         }   
         }
 

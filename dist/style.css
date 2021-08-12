@@ -564,13 +564,13 @@ button:hover::before, .button:hover::before {
     height: 70px;
   }
   .feature__icon img svg path {
-    transition: fill 150ms ease-in-out;
+    transition: fill 250ms ease-in-out;
   }
   .feature__icon img:hover svg path {
     fill: #31d35c;
   }
   .feature__icon img:hover {
-    transform: scale(1.05);
+    transform: scale(1.25);
   }
 }
 .feature__title {
@@ -908,14 +908,15 @@ button:hover::before, .button:hover::before {
   .find__doctors::before {
     content: "";
     background-image: url(/cudmc/logo_trans.png);
-    top: 0px;
+    top: -140px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     position: absolute;
     background-repeat: repeat;
-    height: 48%;
+    height: 100%;
     width: 100%;
+    background-size: 15%;
     opacity: 0.15;
   }
 }
@@ -1196,4 +1197,86 @@ button:hover::before, .button:hover::before {
   width: 30%;
   margin-right: 50px;
   text-align: justify;
+}
+
+.dietary {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dietary__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center center;
+  width: 100%;
+}
+.dietary__image {
+  flex: 2;
+  border: solid 1px;
+  align-items: center;
+  justify-content: center;
+  height: 455px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.dietary__image::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  background-size: cover;
+  height: 172%;
+  width: 100%;
+  background-image: var(--img);
+}
+.dietary__text {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 30px;
+  text-align: justify;
+}
+.dietary__pagination {
+  display: inline-block;
+  width: 100%;
+}
+.dietary__pagination a {
+  color: black;
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+  position: relative;
+  width: 14%;
+  transition: fill 250ms ease-in-out;
+}
+.dietary__pagination a::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  background-image: var(--img);
+  width: 100%;
+  height: 145px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+.dietary__pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #4CAF50;
+  transform: scale(1.35);
+  z-index: 1;
+}
+.dietary__pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+  transform: scale(1.35);
+  z-index: 1000;
 }/*# sourceMappingURL=style.css.map */

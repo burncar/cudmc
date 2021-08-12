@@ -59,14 +59,14 @@
         width: 70px;
         height: 70px;
         svg path {
-          transition: fill 150ms ease-in-out;
+          transition: fill 250ms ease-in-out;
         }
   
         &:hover svg path {
           fill: $limeGreen;
         }
         &:hover{
-          transform: scale(1.05);
+          transform: scale(1.25);
         }
      }
 

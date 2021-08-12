@@ -1,0 +1,97 @@
+.dietary{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__head{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center center;
+        width: 100%;
+    }
+
+
+    &__image{
+        flex:2;
+        border: solid 1px;
+        align-items: center;
+        justify-content: center;
+        height: 455px;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+        &::before{
+            content: "";
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            position: absolute;
+            background-size: cover;
+            height: 172%;
+            width: 100%;
+            background-image: var(--img); 
+        }
+    }
+
+    &__text{
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 30px;
+        text-align: justify;
+    }
+
+    &__pagination{
+        display: inline-block;
+        width: 100%;
+        a {
+            color: black;
+            float: right;
+            padding: 8px 16px;
+            //border: 1px solid #ddd;
+            text-decoration: none;
+            position: relative;
+            width: 14%;
+           
+            transition: fill 250ms ease-in-out;
+            &::before{
+                content: "";
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                position: absolute;
+                background-image: var(--img);
+            
+                width: 100%;
+                height: 145px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size: 100%;
+            }
+        }
+        a.active{
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #4CAF50;
+            transform: scale(1.35);
+            z-index: 1;
+
+          }
+        a:hover:not(.active) {
+            background-color: #ddd;
+            border-radius: 5px;
+
+            transform: scale(1.35);
+            z-index: 1000;
+
+        }
+
+
+
+    }
+    
+
+}
